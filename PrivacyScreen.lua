@@ -23,7 +23,6 @@
 local StarterGui = game:GetService("StarterGui")
 local RunService = game:GetService("RunService")
 
-local Player = game.Players.LocalPlayer
 local UI
 local Background
 local Text
