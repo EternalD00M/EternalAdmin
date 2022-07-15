@@ -65,17 +65,17 @@ function PrivacyUI.Createtext(tects, Keep, glitchy)
 
 				if i ~= tects:len() then
 					if (tects:sub(i,i) == "." or tects:sub(i,i) == "?") then
-						WaitFrame(1)
+						PrivacyUI.WaitFrame(1)
 					elseif tects:sub(i,i) == "," then
-						WaitFrame(0.4)
+						PrivacyUI.WaitFrame(0.4)
 					else
-						WaitFrame(0.04)
+						PrivacyUI.WaitFrame(0.04)
 					end
 				end
 			end
 
 			if not Keep then
-				WaitFrame(2.5)
+				PrivacyUI.WaitFrame(2.5)
 				Text.Text = ""
 			end
 		else
