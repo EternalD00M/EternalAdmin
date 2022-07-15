@@ -1,5 +1,4 @@
 --[[//
-
 //----------------------\\
   INFORMATION FOR SCRIPT
 //----------------------\\
@@ -13,11 +12,9 @@
   1: The Text
   2: If you are keeping the text or deleting it ( true or false )
   3: If you want to use the ' Glitchy Text ' option ( true or false )
-
 //----------------------\\
     END OF INFORMATION
 //----------------------\\
-
 --\\]]
 
 local PrivacyUI = {}
@@ -32,7 +29,7 @@ local Text
 
 AlreadyCreated = false
 
-function SoundEffect(id, volume, pitch)
+function PrivacyUI.SoundEffect(id, volume, pitch)
 	if AlreadyCreated ~= false then
 		local sound = Instance.new("Sound")
 		sound.SoundId = "http://www.roblox.com/asset/?id="..id
@@ -44,7 +41,7 @@ function SoundEffect(id, volume, pitch)
 	end
 end
 
-local function WaitFrame(Time)
+function PrivacyUI.WaitFrame(Time)
 	local Timer = 0
 
 	while Timer < Time do
