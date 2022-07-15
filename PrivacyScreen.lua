@@ -56,9 +56,9 @@ function PrivacyUI.Createtext(tects, Keep, glitchy)
 			for i = 1,tects:len() do
 				local t = tects:sub(1,i)
 				if glitchy ~= false then
-					SoundEffect(929615155, 1, math.random(8,12)/15)
+					PrivacyUI.SoundEffect(929615155, 1, math.random(8,12)/15)
 				else
-					SoundEffect(929615155, 1, 1)
+					PrivacyUI.SoundEffect(929615155, 1, 1)
 				end
 
 				Text.Text = t
