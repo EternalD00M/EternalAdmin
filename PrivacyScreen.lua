@@ -20,6 +20,8 @@
 
 --\\]]
 
+local PrivacyUI = {}
+
 local StarterGui = game:GetService("StarterGui")
 local RunService = game:GetService("RunService")
 
@@ -51,7 +53,7 @@ local function WaitFrame(Time)
 	end
 end
 
-function Createtext(tects, Keep, glitchy)
+function PrivacyUI.Createtext(tects, Keep, glitchy)
 	if AlreadyCreated ~= false then
 		if tects then
 			for i = 1,tects:len() do
@@ -85,7 +87,7 @@ function Createtext(tects, Keep, glitchy)
 	end
 end
 
-function CreateUI()
+function PrivacyUI.CreateUI()
 	if AlreadyCreated ~= true then
 		UI = Instance.new("ScreenGui")
 		Background = Instance.new("ImageLabel")
@@ -128,7 +130,7 @@ function CreateUI()
 		Text.TextWrapped = true
 	end
 end
-function DeleteUI()
+function PrivacyUI.DeleteUI()
 	if UI and AlreadyCreated ~= false then
 		UI:Destroy()
 		pcall(function()
