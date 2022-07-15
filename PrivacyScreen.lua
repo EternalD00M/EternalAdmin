@@ -23,6 +23,7 @@
 local StarterGui = game:GetService("StarterGui")
 local RunService = game:GetService("RunService")
 
+local PrivacyUIName
 local UI
 local Background
 local Text
@@ -97,6 +98,7 @@ function CreateUI()
 		AlreadyCreated = true
 
 		UI.Name = "PrivacyScreen"
+		PrivacyUIName = UI.Name
 		UI.Parent = game.CoreGui
 		UI.ResetOnSpawn = false
 
@@ -133,5 +135,6 @@ function DeleteUI()
 			StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.All,true)
 		end)
 		AlreadyCreated = false
+		PrivacyUIName = nil
 	end
 end
