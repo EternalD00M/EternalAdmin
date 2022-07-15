@@ -140,3 +140,4 @@ function PrivacyUI.DeleteUI()
 		PrivacyUIName = nil
 	end
 end
+return PrivacyUI
