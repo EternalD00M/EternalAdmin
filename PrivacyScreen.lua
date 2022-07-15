@@ -23,7 +23,7 @@
 local StarterGui = game:GetService("StarterGui")
 local RunService = game:GetService("RunService")
 
-local PrivacyUIName
+PrivacyUIName = ""
 local UI
 local Background
 local Text
